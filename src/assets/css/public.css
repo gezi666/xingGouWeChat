@@ -1,0 +1,383 @@
+/*时间弹框样式*/
+
+.mint-datetime-action {
+    width: auto;
+    font-size: 12px;
+    padding: 0 15px;
+    color: #9e9e9e;
+}
+.mint-datetime-action:last-child {
+    color: #9e5bfc;
+}
+.picker-item {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+.picker-item.picker-selected {
+    font-size: 14px;
+    color: #333333;
+}
+
+/*需求上传页面选择时间样式控制*/
+.demand-upload .times  .picker-items .picker-slot:nth-child(3){
+    display: none !important;
+}
+
+/*支付页面复选框*/
+.recharge-main .mint-checkbox-label:before,
+.advertisement {
+    content: '';
+    width: 20px;
+    height: 20px;
+    vertical-align: -5px;
+    margin: 0 4px 0 2px;
+    display: inline-block;
+    background: url("../../../static/img/weixin.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.recharge-main .mint-checkbox-core {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background: url(../../../static/img/radio-no-check.png) no-repeat;
+    background-size: 100% 100%;
+}
+.recharge-main .mint-checkbox-input:checked+.mint-checkbox-core {
+    background: url(../../../static/img/radio-bg.png) no-repeat;
+    background-size: 100% 100%;
+    border-color: transparent;
+}
+.recharge-main .mint-checkbox-input:checked+.mint-checkbox-core::after {
+    border-color: transparent;
+}
+.recharge-main .mint-cell-wrapper {
+    padding: 0;
+    background-image: none;
+}
+.recharge-main .mint-checkbox-label {
+    margin-left: 3px;
+    font-size: 13px;
+    display: inline-block;
+    color: #666;
+}
+.recharge-main .mint-cell:last-child {
+    background-image: none;
+}
+.recharge-main .mint-checklist-title {
+    margin: 0;
+}
+
+
+/*复选框*/
+
+.text-input {
+    position: relative;
+}
+.text-input input {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: -2px;
+    position: absolute;
+    left: -150px;
+    top: 0;
+}
+.text-input label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #b1b7c6;
+    box-sizing: border-box;
+    vertical-align: -2px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #e6effc;
+    margin-right: 5px;
+}
+.text-input input:checked+label {
+    border: 0;
+    background: url("../../../static/img/checkbox-bg.png") no-repeat;
+    background-size: 15px 15px;
+}
+.text-input span {
+    color: #ffa200;
+    padding: 0 3px;
+}
+.text-input .check-label {
+    margin-left: 6px;
+    color: #333;
+    font-size: 14px;
+}
+
+/*swipe样式*/
+.mint-swipe-indicators {
+    /*bottom: 8px !important;*/
+    bottom: 5px !important;
+}
+.mint-swipe-indicator {
+    opacity: 1;
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    background: #d2d2d2;
+}
+.mint-swipe-indicator.is-active {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    background: #d583fd;
+}
+.record-editor .ibox img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*档期复选框*/
+.ad-select-wrap .mint-checkbox-label,
+.advertise .mint-checkbox-label {
+    font-size: 14px;
+    color: #333333;
+}
+.ad-select-wrap .mint-checklist,
+.advertise .mint-checklist {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ad-select-wrap .mint-cell-wrapper,
+.advertise .mint-cell-wrapper {
+    background-image: none;
+    text-align: center;
+}
+.ad-select-wrap .mint-cell {
+    display: inline-block;
+    width: 25%;
+    min-height: 15px;
+    margin-bottom: 20px;
+}
+.ad-select-wrap .mint-cell:last-child,
+.advertise .mint-cell:last-child {
+    background-image: none;
+}
+.ad-select-wrap .mint-checkbox-core,
+.advertise .mint-checkbox-core {
+    border: none;
+}
+.ad-select-wrap .mint-checkbox-core,
+.advertise .mint-checkbox-core {
+    width: 13px;
+    height: 13px;
+    border-radius: 0;
+    background: url("../../../static/img/ad-checkbox.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.ad-select-wrap .mint-checkbox-input:checked+.mint-checkbox-core,
+.advertise .mint-checkbox-input:checked+.mint-checkbox-core {
+    background: url("../../../static/img/adSelect-icon.png") no-repeat center;
+    background-size: 100% 100%;
+    border-color: transparent;
+}
+.ad-select-wrap .mint-checkbox-input:checked+.mint-checkbox-core::after,
+.advertise .mint-checkbox-input:checked+.mint-checkbox-core::after {
+    border-color: transparent;
+}
+.ad-select-wrap .mint-checklist-label,
+.advertise .mint-checklist-label {
+    padding: 0 4px 0 0;
+}
+.ad-select-wrap .mint-checklist-title,
+.advertise .mint-checklist-title {
+    margin: 0;
+    display: none;
+}
+.advertise .mint-cell {
+    min-width: 25%;
+    display: inline-block;
+    min-height: 15px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.advertise .mint-checklist {
+    padding-bottom: 20px;
+}
+.advertise .mint-cell-wrapper {
+    text-align: left;
+}
+.advertise .mint-cell-wrapper {
+    padding: 0;
+}
+.advertise .mint-checkbox-label {
+    margin-left: 2px;
+}
+
+
+/* 编辑-基本信息-单选按钮样式修改 */
+.base-infos .mint-radiolist {
+    float: right;
+    width: calc(100% - 100px);
+}
+.base-infos .mint-radiolist-title {
+    margin: 0;
+}
+.base-infos .mint-cell {
+    float: right;
+}
+.base-infos .mint-cell-wrapper {
+    padding: 0;
+    background-image: none;
+}
+.base-infos .mint-cell:last-child {
+    background-image: none;
+}
+.base-infos  .mint-radiolist-label {
+    padding: 0;
+}
+.base-infos .mint-radio-core {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: url(../../../static/img/radio-no-checked.png) no-repeat;
+    background-size: 100% 100%;
+}
+.base-infos .mint-radio-input:checked + .mint-radio-core {
+    background: url(../../../static/img/radio-checked.png) no-repeat;
+    background-size: 100% 100%;
+}
+.base-infos .mint-radio-input:checked + .mint-radio-core::after {
+    background: none;
+}
+.base-infos .mint-radio-label {
+    font-size: 14px;
+    color: #333;
+}
+.base-infos .mint-radiolist .mint-cell:last-child {
+    margin-left: 40px;
+}
+
+
+/*职业*/
+.base-infos .zy .ad-select-wrap{
+    margin-top: 9px;
+}
+.base-infos .zy .item .mint-checklist .mint-cell-wrapper{
+    text-align: left;
+}
+.base-infos .zy .item .mint-checklist .mint-cell .mint-checklist-label{
+    padding:0;
+}
+.base-infos .zy .item .mint-checklist{
+    margin-left: 5px;
+}
+.base-infos .zy .mint-radiolist-title,
+.base-infos  .mint-checklist-title {
+    display: none;
+}
+.base-infos .zy .item .mint-checklist .mint-cell {
+    width: 25%;
+    margin-bottom: 0;
+}
+.base-infos .zy .item .mint-checklist .mint-cell .mint-checklist-label {
+    white-space: nowrap;
+    height:30px;
+    line-height: 30px;
+}
+.base-infos .zy .item .mint-checklist .mint-cell .mint-checkbox-label {
+    margin-left: 0;
+}
+.base-infos .zy .item .mint-checklist .mint-cell-wrapper {
+    padding: 0;
+    padding-left:1px;
+}
+.base-infos .zy .picker-item {
+    text-align: center;
+}
+.base-infos .zy .picker-slot-wrapper {
+    transform: translate(0, 72px);
+}
+.base-infos .zy .mint-cell-title{
+    margin-left: 4px;
+}
+
+
+/* 艺人审核单选按钮样式修改 */
+.audit-wrapper .mint-radiolist {
+    float: right;
+    width: calc(100% - 100px);
+}
+.audit-wrapper .mint-radiolist-title {
+    margin: 0;
+}
+.audit-wrapper .mint-cell {
+    float: right;
+    min-height: 22px;
+}
+.audit-wrapper .mint-cell-wrapper {
+    padding: 0;
+    background-image: none;
+}
+.audit-wrapper .mint-cell:last-child {
+    background-image: none;
+}
+.audit-wrapper .mint-radiolist-label {
+    padding: 0;
+}
+.audit-wrapper .mint-radio-core {
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: url(../../../static/img/radio-no-checked.png) no-repeat;
+    background-size: 100% 100%;
+}
+.audit-wrapper .mint-radio-input:checked + .mint-radio-core {
+    background: url(../../../static/img/radio-checked.png) no-repeat;
+    background-size: 100% 100%;
+}
+.audit-wrapper .mint-radio-input:checked + .mint-radio-core::after {
+    background: none;
+}
+.audit-wrapper .mint-radio-label {
+    font-size: 14px;
+    color: #333;
+}
+.audit-wrapper .mint-radiolist .mint-cell:last-child {
+    margin-right: 30px;
+}
+
+/* 弹出框样式 */
+.mint-msgbox {
+    width: 68%;
+    top: 25%;
+    border-radius: 10px;
+}
+.mint-msgbox-content {
+    padding: 20px;
+}
+.mint-msgbox-message {
+    color: #333;
+}
+.mint-msgbox-confirm {
+    color: #7679fe;
+}
+.mint-msgbox-btn{
+    font-size: 16px;
+}
+
+/*loading效果*/
+.mint-indicator-wrapper{
+    padding:10px !important;
+    background: transparent !important;
+}
+.mint-spinner-snake{
+    border: 2px solid transparent !important;
+    border-top-color: #999 !important;
+    border-left-color: #999 !important;
+    border-bottom-color: #999 !important;
+}
+.mint-indicator-text{
+    color: #999 !important;
+}
