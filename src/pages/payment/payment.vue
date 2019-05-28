@@ -94,7 +94,7 @@
                 }
             },
             recharge(){
-                window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4d406d12adda944f&redirect_uri=http%3a%2f%2fxingouh5.9cfcf.com%2f%23%2f&response_type=code&scope=snsapi_base&state='+ this.userid +'#wechat_redirect'
+                window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=**yourappid**&redirect_uri=**yourchargepage**&response_type=code&scope=snsapi_base&state='+ this.userid +'#wechat_redirect'
 //                this.$router.push({name:'recharge'})
             },
             closePage(){
