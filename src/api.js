@@ -236,7 +236,7 @@ export default {
      */
     applyForOpenid(params) {
         let serverUrl = urlencode(baseconfig.baseURL)
-        return Get(`https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4d406d12adda944f&redirect_uri=${serverUrl}/oauth/val&response_type=code&scope=snsapi_base&state=${params}#wechat_redirect`)
+        return Get(`https://open.weixin.qq.com/connect/oauth2/authorize?appid=**yourappid**&redirect_uri=${serverUrl}/oauth/val&response_type=code&scope=snsapi_base&state=${params}#wechat_redirect`)
     },
     /**
      * 购买支付-充值-从后台获取微信返回的openid   --- 2   备注：充值时先看cookie中openid是否有值，若没有值，则从后台请求openid，请求回来也要存入cookie；然后调接口获取微信支付接口所需信息--打开支付界面进行支付
