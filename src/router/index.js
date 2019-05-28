@@ -412,7 +412,7 @@ router.beforeEach((to, from, next) => {
                         title: '', // 分享标题
                         desc: '星购云经纪平台', // 分享描述
                         link: location.href, // 分享链接
-                        imgUrl:  'http://xingouh5.9cfcf.com/static/img/sharedLogo.jpg' // 分享图标
+                        imgUrl:  'http://yourSharedLogo.jpg' // 分享图标
                     }
 
                     if(to.meta.title == '明星详情'){
